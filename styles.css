@@ -355,3 +355,7 @@ p { margin: 0 0 1em; }
   .reveal { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
+
+.map-link, .footer a:not(.brand), .info-list a { color: var(--gold); border-bottom: 1px solid rgba(212, 175, 106, .4); }
+.info-list a { color: var(--gold-deep); }
+.map-link { display: inline-block; margin-top: 8px; }

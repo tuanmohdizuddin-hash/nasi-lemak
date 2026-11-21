@@ -9,3 +9,5 @@ Buka `index.html` terus dalam pelayar — tiada proses build diperlukan.
 - `script.js` — navigasi, tab menu, slider ulasan, borang tempahan ke WhatsApp
 
 Tukar nombor WhatsApp dalam `script.js` (`WHATSAPP_NUMBER`) serta alamat/telefon dalam `index.html`.
+
+Lokasi: Selising, Pasir Puteh, Kelantan · Tel/WhatsApp: 014-544 8996

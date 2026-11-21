@@ -1,7 +1,7 @@
 // Daun Emas — interaksi laman
 (() => {
   // Nombor WhatsApp untuk tempahan (format antarabangsa, tanpa + atau sengkang)
-  const WHATSAPP_NUMBER = "60123456789";
+  const WHATSAPP_NUMBER = "60145448996";
 
   const nav = document.getElementById("nav");
   const burger = document.getElementById("burger");

@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Daun Emas — Nasi Lemak Warisan</title>
+  <meta name="description" content="Daun Emas — nasi lemak mewah berkonsepkan tradisional daun pisang. Santan pekat, sambal tumis perlahan, dihidang di atas daun pisang segar." />
+  <meta name="theme-color" content="#0f2a18" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4C14 18 10 40 32 60 54 40 50 18 32 4z' fill='%232f6b3a'/%3E%3Cpath d='M32 8v50' stroke='%23d4af6a' stroke-width='3'/%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#utama" class="brand" aria-label="Daun Emas — laman utama">
+      <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 4C14 18 10 40 32 60 54 40 50 18 32 4z" fill="currentColor" opacity=".18"/>
+        <path d="M32 4C14 18 10 40 32 60 54 40 50 18 32 4z" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M32 8v50M32 22l-10-6M32 30l-12-6M32 38l-12-5M32 22l10-6M32 30l12-6M32 38l12-5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+      </svg>
+      <span>Daun Emas</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#kisah">Kisah</a>
+      <a href="#menu">Menu</a>
+      <a href="#pengalaman">Pengalaman</a>
+      <a href="#ulasan">Ulasan</a>
+      <a href="#lokasi">Lokasi</a>
+      <a href="#tempahan" class="btn btn-gold btn-sm">Tempah Meja</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero leaf-bg" id="utama">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Sejak 1968 · Resipi Warisan Nenda</p>
+        <h1>Nasi Lemak,<br/><em>dibalut kemewahan</em><br/>daun pisang.</h1>
+        <p class="lead">Beras wangi dimasak bersama santan kelapa perahan pagi, pandan dan halia — dihidang di atas daun pisang yang dilayur, bersama sambal tumis yang dimasak perlahan selama enam jam.</p>
+        <div class="hero-cta">
+          <a href="#tempahan" class="btn btn-gold">Tempah Pengalaman</a>
+          <a href="#menu" class="btn btn-ghost">Lihat Menu</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>6 jam</strong><span>Sambal dimasak perlahan</span></li>
+          <li><strong>100%</strong><span>Santan perahan segar</span></li>
+          <li><strong>3</strong><span>Generasi resipi</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-art reveal" aria-hidden="true">
+        <div class="plate-ring"></div>
+        <!-- Ilustrasi nasi lemak atas daun pisang -->
+        <svg class="plate" viewBox="0 0 500 500">
+          <defs>
+            <radialGradient id="leafG" cx="50%" cy="45%" r="60%">
+              <stop offset="0" stop-color="#4f9a4e"/>
+              <stop offset=".6" stop-color="#2f6b3a"/>
+              <stop offset="1" stop-color="#173f22"/>
+            </radialGradient>
+            <radialGradient id="riceG" cx="45%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#fffdf6"/>
+              <stop offset=".7" stop-color="#f3ead2"/>
+              <stop offset="1" stop-color="#d9caa3"/>
+            </radialGradient>
+            <radialGradient id="sambalG" cx="40%" cy="35%" r="70%">
+              <stop offset="0" stop-color="#d9452b"/>
+              <stop offset=".7" stop-color="#9e2316"/>
+              <stop offset="1" stop-color="#6a140c"/>
+            </radialGradient>
+            <radialGradient id="yolkG" cx="40%" cy="40%" r="60%">
+              <stop offset="0" stop-color="#ffcf4a"/>
+              <stop offset="1" stop-color="#e58f12"/>
+            </radialGradient>
+            <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+              <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity=".35"/>
+            </filter>
+          </defs>
+
+          <!-- daun pisang -->
+          <g filter="url(#soft)">
+            <path d="M250 30 C 400 70, 480 200, 460 300 C 440 400, 340 470, 250 470 C 160 470, 60 400, 40 300 C 20 200, 100 70, 250 30 Z" fill="url(#leafG)"/>
+            <path d="M250 34 C 252 180, 252 330, 250 466" stroke="#9cc58a" stroke-width="5" fill="none" opacity=".8"/>
+            <g stroke="#bfe0a8" stroke-width="1.4" opacity=".28" fill="none">
+              <path d="M250 70 C 200 80 140 110 95 150"/><path d="M250 110 C 190 120 120 150 70 200"/>
+              <path d="M250 150 C 180 160 110 195 55 250"/><path d="M250 195 C 175 205 100 240 48 300"/>
+              <path d="M250 240 C 175 250 105 290 60 350"/><path d="M250 290 C 185 300 125 340 90 400"/>
+              <path d="M250 340 C 195 350 150 390 130 440"/>
+              <path d="M250 70 C 300 80 360 110 405 150"/><path d="M250 110 C 310 120 380 150 430 200"/>
+              <path d="M250 150 C 320 160 390 195 445 250"/><path d="M250 195 C 325 205 400 240 452 300"/>
+              <path d="M250 240 C 325 250 395 290 440 350"/><path d="M250 290 C 315 300 375 340 410 400"/>
+              <path d="M250 340 C 305 350 350 390 370 440"/>
+            </g>
+            <!-- koyakan tepi daun -->
+            <path d="M60 230 l22 6 M445 270 l-20 4 M110 410 l16 -14" stroke="#0f2a18" stroke-width="3" opacity=".5"/>
+          </g>
+
+          <!-- nasi -->
+          <g filter="url(#soft)">
+            <ellipse cx="225" cy="240" rx="105" ry="90" fill="url(#riceG)"/>
+            <g fill="#fff" opacity=".7">
+              <ellipse cx="190" cy="205" rx="6" ry="3" transform="rotate(-20 190 205)"/>
+              <ellipse cx="215" cy="190" rx="6" ry="3" transform="rotate(15 215 190)"/>
+              <ellipse cx="245" cy="210" rx="6" ry="3" transform="rotate(-40 245 210)"/>
+              <ellipse cx="200" cy="240" rx="6" ry="3" transform="rotate(30 200 240)"/>
+              <ellipse cx="260" cy="250" rx="6" ry="3" transform="rotate(-10 260 250)"/>
+              <ellipse cx="230" cy="275" rx="6" ry="3" transform="rotate(50 230 275)"/>
+              <ellipse cx="175" cy="270" rx="6" ry="3" transform="rotate(-30 175 270)"/>
+            </g>
+            <!-- daun pandan -->
+            <path d="M200 170 C 230 150, 270 150, 300 160" stroke="#3f8a3c" stroke-width="7" fill="none" stroke-linecap="round"/>
+          </g>
+
+          <!-- sambal -->
+          <g filter="url(#soft)">
+            <path d="M285 300 C 330 275, 385 290, 390 330 C 395 370, 345 390, 305 380 C 270 372, 255 325, 285 300 Z" fill="url(#sambalG)"/>
+            <g fill="#f4a261" opacity=".55"><circle cx="315" cy="318" r="4"/><circle cx="345" cy="335" r="3"/><circle cx="330" cy="355" r="3.5"/><circle cx="360" cy="315" r="2.5"/></g>
+            <path d="M300 310 C 320 300 345 300 365 310" stroke="#ffb199" stroke-width="3" fill="none" opacity=".45" stroke-linecap="round"/>
+          </g>
+
+          <!-- telur rebus separuh -->
+          <g filter="url(#soft)">
+            <ellipse cx="350" cy="205" rx="46" ry="38" fill="#fbf8ef"/>
+            <circle cx="350" cy="207" r="22" fill="url(#yolkG)"/>
+            <ellipse cx="343" cy="199" rx="7" ry="4" fill="#fff4c2" opacity=".7"/>
+          </g>
+
+          <!-- timun -->
+          <g filter="url(#soft)">
+            <g transform="translate(140 345)">
+              <ellipse rx="30" ry="22" fill="#2e6b2c"/><ellipse rx="25" ry="18" fill="#cfe8a9"/>
+              <g fill="#f3fbe4"><circle cx="-7" cy="-3" r="2.5"/><circle cx="6" cy="-4" r="2.5"/><circle cx="0" cy="6" r="2.5"/></g>
+            </g>
+            <g transform="translate(185 372) rotate(18)">
+              <ellipse rx="30" ry="22" fill="#2e6b2c"/><ellipse rx="25" ry="18" fill="#d8eeb4"/>
+              <g fill="#f3fbe4"><circle cx="-7" cy="-3" r="2.5"/><circle cx="6" cy="-4" r="2.5"/><circle cx="0" cy="6" r="2.5"/></g>
+            </g>
+          </g>
+
+          <!-- kacang & ikan bilis -->
+          <g filter="url(#soft)">
+            <g fill="#c68a4a" stroke="#8a5a2b" stroke-width="1.5">
+              <ellipse cx="120" cy="190" rx="9" ry="7"/><ellipse cx="138" cy="178" rx="9" ry="7"/>
+              <ellipse cx="128" cy="205" rx="9" ry="7"/><ellipse cx="108" cy="208" rx="9" ry="7"/>
+              <ellipse cx="146" cy="196" rx="9" ry="7"/><ellipse cx="115" cy="225" rx="9" ry="7"/>
+            </g>
+            <g stroke="#d9b98a" stroke-width="5" stroke-linecap="round" fill="none">
+              <path d="M95 255 q 15 -8 32 -2"/><path d="M100 272 q 16 -6 30 2"/>
+              <path d="M92 288 q 14 -10 30 -6"/><path d="M110 245 q 15 -4 28 4"/>
+            </g>
+            <g fill="#3a2a1a"><circle cx="126" cy="252" r="1.6"/><circle cx="129" cy="273" r="1.6"/><circle cx="121" cy="281" r="1.6"/><circle cx="137" cy="248" r="1.6"/></g>
+          </g>
+
+          <!-- daun kari hiasan -->
+          <path d="M360 420 c 10 -20 30 -22 40 -18 c -6 14 -22 24 -40 18z" fill="#4c8a3a"/>
+        </svg>
+
+        <div class="tag tag-1"><span>✦</span> Sambal Tumis 6 Jam</div>
+        <div class="tag tag-2"><span>✦</span> Daun Pisang Dilayur</div>
+      </div>
+    </div>
+    <a href="#kisah" class="scroll-cue" aria-label="Skrol ke bawah"><span></span></a>
+  </section>
+
+  <!-- ===== MARQUEE ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Santan Perahan Pagi</span><i>✦</i><span>Beras Wangi Pilihan</span><i>✦</i><span>Daun Pandan Segar</span><i>✦</i><span>Ikan Bilis Pantai Timur</span><i>✦</i><span>Rendang Wagyu</span><i>✦</i><span>Dibungkus Tangan</span><i>✦</i>
+      <span>Santan Perahan Pagi</span><i>✦</i><span>Beras Wangi Pilihan</span><i>✦</i><span>Daun Pandan Segar</span><i>✦</i><span>Ikan Bilis Pantai Timur</span><i>✦</i><span>Rendang Wagyu</span><i>✦</i><span>Dibungkus Tangan</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ===== KISAH ===== -->
+  <section class="section story" id="kisah">
+    <div class="container story-grid">
+      <div class="story-visual reveal" aria-hidden="true">
+        <div class="bungkus-card">
+          <!-- bungkusan piramid daun pisang -->
+          <svg viewBox="0 0 300 300">
+            <defs>
+              <linearGradient id="bL" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5ca356"/><stop offset="1" stop-color="#245a2e"/></linearGradient>
+              <linearGradient id="bR" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f8541"/><stop offset="1" stop-color="#16391d"/></linearGradient>
+            </defs>
+            <ellipse cx="150" cy="255" rx="105" ry="16" fill="#000" opacity=".3"/>
+            <path d="M150 40 L 45 245 L 150 260 Z" fill="url(#bL)"/>
+            <path d="M150 40 L 255 245 L 150 260 Z" fill="url(#bR)"/>
+            <g stroke="#c7e7b0" stroke-width="1" opacity=".3">
+              <path d="M150 70 L 70 230"/><path d="M150 100 L 95 238"/><path d="M150 130 L 120 245"/>
+              <path d="M150 70 L 230 230"/><path d="M150 100 L 205 238"/><path d="M150 130 L 180 245"/>
+            </g>
+            <path d="M150 40 L 150 260" stroke="#0f2a18" stroke-width="2" opacity=".5"/>
+            <!-- kertas & lidi -->
+            <path d="M88 165 L 212 165 L 222 185 L 78 185 Z" fill="#f3ead2"/>
+            <path d="M88 165 L 212 165" stroke="#d4af6a" stroke-width="2"/>
+            <text x="150" y="180" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="13" font-weight="700" fill="#0f2a18" letter-spacing="2">DAUN EMAS</text>
+            <path d="M150 34 L 150 18" stroke="#8a5a2b" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="year-badge"><strong>1968</strong><span>Kampung Baru, KL</span></div>
+      </div>
+      <div class="story-copy reveal">
+        <p class="eyebrow">Kisah Kami</p>
+        <h2>Dari gerai kecil di tepi jalan, ke meja santapan yang anggun.</h2>
+        <p>Segalanya bermula dengan Nenda Fatimah, sebuah dapur arang, dan bakul bungkusan nasi lemak berbalut daun pisang yang dijual sebelum azan Subuh. Aroma santan dan pandan itu kami pelihara — kini dipersembahkan dengan sentuhan moden yang mewah.</p>
+        <p>Setiap helai daun pisang dipetik segar, dilayur di atas api untuk melembutkan seratnya dan melepaskan haruman semula jadi yang meresap ke dalam nasi. Itulah rahsia yang tidak boleh ditiru oleh pinggan biasa.</p>
+        <div class="pillars">
+          <div class="pillar"><span class="pi">❦</span><h3>Warisan</h3><p>Resipi asal tiga generasi, tanpa jalan pintas.</p></div>
+          <div class="pillar"><span class="pi">❦</span><h3>Kesegaran</h3><p>Bahan dari pasar setiap pagi, santan diperah sendiri.</p></div>
+          <div class="pillar"><span class="pi">❦</span><h3>Kemewahan</h3><p>Lauk premium: wagyu, udang galah, ketam nipah.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU ===== -->
+  <section class="section menu leaf-bg" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Hidangan</p>
+        <h2>Menu Istimewa</h2>
+        <p class="sub">Setiap pinggan dihidang di atas daun pisang segar, bersama sambal, telur, kacang, ikan bilis &amp; timun.</p>
+      </div>
+
+      <div class="tabs reveal" role="tablist" aria-label="Kategori menu">
+        <button class="tab active" role="tab" aria-selected="true" data-tab="utama">Hidangan Utama</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="lauk">Lauk Tambahan</button>
+        <button class="tab" role="tab" aria-selected="false" data-tab="minum">Minuman &amp; Kuih</button>
+      </div>
+
+      <div class="menu-panel active" data-panel="utama">
+        <article class="dish featured reveal">
+          <div class="dish-badge">Hidangan Diraja</div>
+          <div class="dish-top"><h3>Nasi Lemak Diraja Rendang Wagyu</h3><span class="price">RM 68</span></div>
+          <p>Rendang wagyu A5 dimasak 8 jam dengan kerisik buatan sendiri, sambal tumis, telur masin dan serunding kelapa.</p>
+          <ul class="chips"><li>Tandatangan</li><li>Pedas Sederhana</li></ul>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-top"><h3>Nasi Lemak Udang Galah Bakar</h3><span class="price">RM 58</span></div>
+          <p>Udang galah sungai dibakar dengan mentega sambal, disiram minyak bawang wangi.</p>
+          <ul class="chips"><li>Laut</li></ul>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-top"><h3>Nasi Lemak Ayam Berempah</h3><span class="price">RM 28</span></div>
+          <p>Ayam kampung diperap 24 jam dengan 12 jenis rempah, digoreng garing bersama serpihan rempah.</p>
+          <ul class="chips"><li>Kegemaran</li></ul>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-top"><h3>Nasi Lemak Sotong Sambal Petai</h3><span class="price">RM 32</span></div>
+          <p>Sotong segar dimasak sambal merah pekat bersama petai yang rangup.</p>
+          <ul class="chips"><li>Pedas</li></ul>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-top"><h3>Nasi Lemak Bungkus Klasik</h3><span class="price">RM 9</span></div>
+          <p>Seperti zaman Nenda — dibungkus tangan dalam daun pisang dan kertas, lengkap dengan sambal ikan bilis.</p>
+          <ul class="chips"><li>Warisan</li><li>Bawa Pulang</li></ul>
+        </article>
+        <article class="dish reveal">
+          <div class="dish-top"><h3>Nasi Lemak Ketam Nipah Cili</h3><span class="price">RM 62</span></div>
+          <p>Ketam nipah dimasak cili api dan telur, kuah pekat yang meresap ke dalam nasi santan.</p>
+          <ul class="chips"><li>Musim</li></ul>
+        </article>
+      </div>
+
+      <div class="menu-panel" data-panel="lauk" hidden>
+        <article class="dish reveal"><div class="dish-top"><h3>Paru Goreng Rangup</h3><span class="price">RM 12</span></div><p>Paru lembu digoreng garing dengan bawang dan rempah kunyit.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Sambal Kerang</h3><span class="price">RM 14</span></div><p>Kerang segar dalam sambal tumis enam jam.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Telur Masin Bakar</h3><span class="price">RM 6</span></div><p>Telur itik masin dibakar perlahan atas bara arang.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Begedil Daging</h3><span class="price">RM 5</span></div><p>Kentang dan daging cincang, digoreng keemasan.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Kerabu Mangga Muda</h3><span class="price">RM 9</span></div><p>Segar, masam dan pedas — penyeimbang sempurna.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Sambal Ekstra</h3><span class="price">RM 4</span></div><p>Kerana sambal tidak pernah cukup.</p></article>
+      </div>
+
+      <div class="menu-panel" data-panel="minum" hidden>
+        <article class="dish reveal"><div class="dish-top"><h3>Teh Tarik Emas</h3><span class="price">RM 8</span></div><p>Teh Boh dengan susu pekat, ditarik tinggi, berbuih lembut.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Kopi O Kampung</h3><span class="price">RM 6</span></div><p>Biji kopi disangai dengan mentega dan gula, aroma pekat.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Air Bandung Selasih</h3><span class="price">RM 9</span></div><p>Sirap mawar, susu dan biji selasih yang menyegarkan.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Kuih Seri Muka Pandan</h3><span class="price">RM 7</span></div><p>Pulut berlapis kastard pandan, lembut dan wangi.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Pengat Pisang Durian</h3><span class="price">RM 14</span></div><p>Pisang raja dalam kuah santan gula Melaka, bertabur durian musang king.</p></article>
+        <article class="dish reveal"><div class="dish-top"><h3>Cendol Gula Melaka</h3><span class="price">RM 10</span></div><p>Cendol pandan, santan segar dan gula Melaka asli.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PENGALAMAN ===== -->
+  <section class="section experience" id="pengalaman">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Ritual Santapan</p>
+        <h2>Pengalaman Daun Pisang</h2>
+        <p class="sub">Empat langkah yang menjadikan setiap suapan satu upacara.</p>
+      </div>
+      <ol class="steps">
+        <li class="step reveal"><span class="num">01</span><h3>Dipetik</h3><p>Daun pisang batu dipetik setiap subuh dari kebun keluarga di Hulu Langat.</p></li>
+        <li class="step reveal"><span class="num">02</span><h3>Dilayur</h3><p>Daun dilayur di atas api untuk melembutkan serat dan melepaskan haruman.</p></li>
+        <li class="step reveal"><span class="num">03</span><h3>Dihidang</h3><p>Nasi panas diletak di atas daun — wap santan bersatu dengan aroma daun.</p></li>
+        <li class="step reveal"><span class="num">04</span><h3>Dinikmati</h3><p>Makan dengan tangan, cara tradisi — atau dengan sudu perak, pilihan anda.</p></li>
+      </ol>
+
+      <div class="packages">
+        <div class="pkg reveal">
+          <h3>Santapan Pagi</h3>
+          <p class="pkg-price">RM 45 <small>/ orang</small></p>
+          <ul><li>Nasi lemak pilihan</li><li>Satu lauk tambahan</li><li>Teh tarik / kopi</li></ul>
+        </div>
+        <div class="pkg pkg-gold reveal">
+          <span class="ribbon">Paling Digemari</span>
+          <h3>Hidangan Diraja</h3>
+          <p class="pkg-price">RM 128 <small>/ orang</small></p>
+          <ul><li>Rendang wagyu &amp; udang galah</li><li>Tiga lauk tambahan</li><li>Minuman &amp; pencuci mulut</li><li>Persembahan atas dulang tembaga</li></ul>
+        </div>
+        <div class="pkg reveal">
+          <h3>Kenduri Peribadi</h3>
+          <p class="pkg-price">Dari RM 2,800</p>
+          <ul><li>20 – 80 tetamu</li><li>Meja panjang beralas daun pisang</li><li>Chef di majlis anda</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ULASAN ===== -->
+  <section class="section reviews leaf-bg" id="ulasan">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kata Mereka</p>
+        <h2>Ulasan Tetamu</h2>
+      </div>
+      <div class="review-slider">
+        <figure class="review active">
+          <div class="stars" aria-label="5 bintang">★★★★★</div>
+          <blockquote>"Sambalnya mengingatkan saya pada masakan arwah nenek. Daun pisang itu bukan hiasan — ia benar-benar mengubah rasa nasi."</blockquote>
+          <figcaption>— Aisyah R., Petaling Jaya</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5 bintang">★★★★★</div>
+          <blockquote>"Rendang wagyu di atas nasi lemak? Saya ragu pada mulanya. Sekarang saya datang setiap Sabtu."</blockquote>
+          <figcaption>— Daniel L., Bangsar</figcaption>
+        </figure>
+        <figure class="review">
+          <div class="stars" aria-label="5 bintang">★★★★★</div>
+          <blockquote>"Kami tempah Kenduri Peribadi untuk majlis pertunangan. Tetamu masih bercakap tentangnya sehingga hari ini."</blockquote>
+          <figcaption>— Keluarga Hj. Rahman, Shah Alam</figcaption>
+        </figure>
+        <div class="dots" role="tablist" aria-label="Pilih ulasan">
+          <button class="dot active" aria-label="Ulasan 1"></button>
+          <button class="dot" aria-label="Ulasan 2"></button>
+          <button class="dot" aria-label="Ulasan 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TEMPAHAN ===== -->
+  <section class="section booking" id="tempahan">
+    <div class="container booking-grid">
+      <div class="booking-copy reveal">
+        <p class="eyebrow">Tempahan</p>
+        <h2>Tempah meja anda.</h2>
+        <p>Tempat duduk terhad setiap pagi demi menjaga mutu. Isikan butiran dan kami akan sahkan melalui WhatsApp.</p>
+        <ul class="info-list">
+          <li><span>Waktu</span>Isnin – Ahad · 7:00 pagi – 3:00 petang</li>
+          <li><span>Telefon</span>+60 12-345 6789</li>
+          <li><span>Emel</span>tempahan@daunemas.my</li>
+        </ul>
+      </div>
+      <form class="booking-form reveal" id="bookingForm" novalidate>
+        <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" required placeholder="Nama penuh" /></div>
+        <div class="row">
+          <div class="field"><label for="tarikh">Tarikh</label><input id="tarikh" name="tarikh" type="date" required /></div>
+          <div class="field"><label for="masa">Masa</label>
+            <select id="masa" name="masa" required>
+              <option value="">Pilih</option>
+              <option>7:30 pagi</option><option>8:30 pagi</option><option>9:30 pagi</option>
+              <option>11:00 pagi</option><option>12:30 tengah hari</option><option>2:00 petang</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field"><label for="tetamu">Bilangan Tetamu</label><input id="tetamu" name="tetamu" type="number" min="1" max="80" value="2" required /></div>
+          <div class="field"><label for="pakej">Pakej</label>
+            <select id="pakej" name="pakej">
+              <option>À la carte</option><option>Santapan Pagi</option><option>Hidangan Diraja</option><option>Kenduri Peribadi</option>
+            </select>
+          </div>
+        </div>
+        <div class="field"><label for="nota">Nota (pilihan)</label><textarea id="nota" name="nota" rows="3" placeholder="Alahan, sambutan istimewa…"></textarea></div>
+        <button type="submit" class="btn btn-gold btn-block">Hantar via WhatsApp</button>
+        <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== LOKASI / FOOTER ===== -->
+  <footer class="footer leaf-bg" id="lokasi">
+    <div class="container footer-grid">
+      <div>
+        <a href="#utama" class="brand">
+          <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4C14 18 10 40 32 60 54 40 50 18 32 4z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M32 8v50" stroke="currentColor" stroke-width="1.5"/></svg>
+          <span>Daun Emas</span>
+        </a>
+        <p class="muted">Nasi lemak warisan, dihidang dengan kemewahan di atas daun pisang.</p>
+      </div>
+      <div>
+        <h4>Lokasi</h4>
+        <p class="muted">No. 18, Jalan Raja Muda Musa,<br/>Kampung Baru, 50300 Kuala Lumpur</p>
+      </div>
+      <div>
+        <h4>Waktu Operasi</h4>
+        <p class="muted">Isnin – Ahad<br/>7:00 pagi – 3:00 petang</p>
+      </div>
+      <div>
+        <h4>Ikuti Kami</h4>
+        <p class="muted">Instagram · TikTok · Facebook<br/>@daunemas.my</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Daun Emas. Hak cipta terpelihara.</span>
+      <span>Dibuat dengan santan &amp; kasih sayang.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
